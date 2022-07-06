@@ -15,13 +15,26 @@ $neutral-2: hsl(228, 12%, 48%)
 $neutral-3: hsl(0, 0%, 100%)
 
 // fonts
-$sub-font-family: Montserrat, serif
 $main-font-family: Fraunces, sans-serif
+$sub-font-family: Montserrat, serif
 
 *
     margin: 0
     padding: 0
     box-sizing: border-box
+
+.attribution
+    font-family: $sub-font-family
+
+.main-font
+    font-family: $main-font-family
+    font-weight: 500
+    font-size: 14px
+
+.sub-font
+    font-family: $sub-font-family
+    font-weight: 500
+    font-size: 14px
 
 .product-container
     border-radius: 10px
@@ -32,6 +45,7 @@ $main-font-family: Fraunces, sans-serif
     .product-image
         height: 33.3vh
         width: 100%
+        border-radius: 10px 10px 0 0
         background-image: url('../images/image-product-mobile.jpg')
         background-size: cover
 
@@ -46,25 +60,18 @@ $main-font-family: Fraunces, sans-serif
         width: 100%
         padding: 20px
         .product-type
-            font-family: $sub-font-family
-            font-weight: 500
-            font-size: 14px
             text-transform: uppercase
             color: $neutral-2
             letter-spacing: 7px
 
         .product-name
-            font-family: $main-font-family
             font-weight: 700
             font-size: 36px
             margin: 15px 0
             line-height: 1
 
         .product-description
-            font-family: $sub-font-family
-            font-weight: 500
             color: $neutral-2
-            font-size: 14px
             line-height: 1.8
             margin-bottom: 40px
 
@@ -72,17 +79,13 @@ $main-font-family: Fraunces, sans-serif
             display: flex
             align-items: center
             .current-price
-                font-family: $main-font-family
                 font-weight: 700
                 font-size: 32px
                 color: $primary-color
                 margin: 20px 0
             .previous-price
                 display: flex
-                font-family: $sub-font-family
-                font-weight: 500
                 color: $neutral-2
-                font-size: 14px
                 margin: 0 25px
         .btn
             width: 100%
@@ -91,8 +94,6 @@ $main-font-family: Fraunces, sans-serif
             border: none
             border-radius: 10px
             color: $neutral-3
-            font-family: $sub-font-family
-            font-weight: 500
             font-size: 16px
             display: flex
             justify-content: center
@@ -107,12 +108,13 @@ $main-font-family: Fraunces, sans-serif
 
     .product-container
         display: flex
-        height: 100%
+        height: 100vh
         .product-image
             max-width: 50%
             height: 100vh
             background-image: url('../images/image-product-desktop.jpg')
             background-size: cover
+            border-radius: 10px 0 0 10px
         .product
             padding: 40px
             height: 100%
@@ -124,8 +126,14 @@ $main-font-family: Fraunces, sans-serif
 
             .product-description
                 font-size: 18px
-                margin-bottom: 42px
+                margin-bottom: 0
+                height: 16%
 
+        .product-purchase-container
+            display: flex
+            flex-direction: column
+            height: 50%
+            justify-content: end
             .product-price
                 .current-price
                     font-size: 60px
