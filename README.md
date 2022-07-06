@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Product preview card component](https://scyberj.github.io/Product-preview-card-component/)
 
 ## My process
 
@@ -34,5 +34,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Aiden](https://www.your-site.com)
+- Website - [Aiden](https://scyberj.github.io/Product-preview-card-component/)
 - Frontend Mentor - [@ScyberJ](https://www.frontendmentor.io/profile/ScyberJ)
